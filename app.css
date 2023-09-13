@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+}
+
+#artistas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    box-shadow: 5px 5px 5px 5px #0b054387;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    color: white;
+    background-color: rgba(0, 0, 255, 0.545);
+}
+
+.card > img {
+    width: 100%;
+    margin-top: auto;
+    
+}
+.card:hover{
+    transform: scale(1.1);
+    border: 1px black;
+}
+
+#generoMusical{
+    margin: auto;
+    width: 50%;
+    padding: 5rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    text-align: center;
+
+}
+
+
+.item_genero{
+    width: 200px;
+    padding: 1.5rem 1.5rem;
+    background-color: rgba(73, 142, 203, 0.498);
+    box-shadow: 5px 5px 5px rgba(185, 193, 219, 0.465) ;
+    cursor: pointer;
+}
+
+.item_genero:hover{
+    transform: scale(1.1);
+    border: 1px black;
+}
+
+#nav_lower_player{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(240, 248, 255);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1.5rem;
+}
+
+.hiden{
+    display: none !important;
+}
+
+#close_nav_player{
+    cursor: pointer;
+}
+
+body{
+    background-image: url(./Multimedia/img/fondo.jpg);
+}
+
+#close_nav_player{
+    cursor: pointer;
+}
+
+#container_data_artista{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.nav_lower_icons{
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_lower_icons > div{
+    display: flex;
+    gap: 1rem;
+}
+
+.nav_lower_icons > div > i{
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.nav_lower_icons > div > i:hover{
+    color: var(--color-2);
+
+}
+
+
+/** ASIDE */
+aside{
+    max-width: 444px;
+    width: 100%;
+    background-color: var(--color-1);
+    box-shadow: 10px 5px 5px rgba(232, 239, 246, 0.685) inset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    float: right;
+    gap: 2rem;
+    padding: 1.5rem;
+}
+
+aside > div{
+    width: 80%;
+    box-shadow: 5px 5px 5px #22222254;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+
+}
+
+aside > div > img{
+    width: 100%;
+}
+
+#nav_aside_artist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hidden{
+    display: none !important;
+}
+
+#audio{
+    display: none
+    }
